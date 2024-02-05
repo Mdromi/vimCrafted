@@ -19,10 +19,23 @@ Neovim is a powerful and extensible text editor with various commands to navigat
 - `*` - Search for the word under the cursor.
 - `#` - Search backward for the word under the cursor.
 
-## Modes
+## File
 
-- `i` - Enter insert mode (for inserting text).
-- `Esc` - Return to normal mode.
+- `a` -> In file tree for creating new file
+- `c` -> In file tree for coping file
+- `p` -> In file tree for pasting file
+- `r` -> In file tree for renaming file
+
+## Copy, Cut, and Paste
+
+- `p` - Paste after the cursor.
+- `P` - Paste before the cursor.
+
+## Folding
+
+- `zf` - Create a fold (select text and type `zf` to fold).
+- `zo` - Open a fold.
+- `zc` - Close a fold.
 
 ## Editing Text
 
@@ -47,6 +60,48 @@ Neovim is a powerful and extensible text editor with various commands to navigat
 - `:wq` - Save and quit.
 - `:q!` - Quit without saving.
 
+
+## NvChad
+
+- `SPACE + t + h` -> For changing theme
+- `:TSInstall <language name>` -> For installing syntax highlighting for specific language
+- `:TSInstallInfo` -> For listing all the languages for syntax highlighting
+- `CONTROL(^) + n` -> For opening file tree
+- `SPACE + f + f` -> For opening find file menu
+- `SPACE + f + b` -> For opening buffer find file menu
+- `SPACE + c + h` -> For opening NvChad cheat sheet
+- `SPACE` -> For opening quick cheat sheet
+- `:VSP` -> For opening vertical split window
+- `SPACE + n` -> For toggling absolute line number
+- `SPACE + r + n` -> For toggling relative line number
+- `TAB` -> For switching opens buffer files
+- `SHIFT + TAB` -> For reverse switching opens buffer files
+- `SPACE + x` -> For closing buffer file
+- `SPACE + e` -> For going file tree to open file
+- `SPACE + h` -> For opening terminal
+- `SPACE + f + m` -> For formatting the code
+
+## Modes
+
+- `i` - Enter insert mode (for inserting text).
+- `Esc` - Return to normal mode.
+
+## Spell
+
+- `z + =` -> for correct answer suggestion
+- `[ + s` -> for go up to wrong spelling worlds
+- `] + s` -> for go down to wrong spelling worlds
+- `:spellr` -> fix all occurrence wrong spelling
+- `z + g` -> for adding a wrong world the spell dict
+
+## Mason
+
+- `:MasonInstallAll` -> For installing dependencies
+
+## Treesitter
+
+- `:TSInstall <language_to_install>` -> For installing syntax highlighting
+
 ## Split Windows
 
 - `:split` - Split the window horizontally.
@@ -65,11 +120,11 @@ Neovim is a powerful and extensible text editor with various commands to navigat
 - `u` - Undo the last change.
 - `Ctrl + r` - Redo.
 
-## Exiting and Saving
+## File Explorer
 
-- `:wq` - Save changes and exit.
-- `:w` - Save changes without exiting.
-- `:q!` - Exit without saving changes.
+- `:Explore` - Open the file explorer.
+- `:Vexplore` - Open the file explorer in a vertical split.
+- `:Sexplore` - Open the file explorer in a horizontal split.
 
 ## Visual Mode and Selection
 
@@ -77,22 +132,6 @@ Neovim is a powerful and extensible text editor with various commands to navigat
 - `V` - Enter visual line mode to select entire lines.
 - `Ctrl + v` - Enter visual block mode to select a block of text.
 
-## Copy, Cut, and Paste
-
-- `p` - Paste after the cursor.
-- `P` - Paste before the cursor.
-
-## Folding
-
-- `zf` - Create a fold (select text and type `zf` to fold).
-- `zo` - Open a fold.
-- `zc` - Close a fold.
-
-## File Explorer
-
-- `:Explore` - Open the file explorer.
-- `:Vexplore` - Open the file explorer in a vertical split.
-- `:Sexplore` - Open the file explorer in a horizontal split.
 
 ## Tabs and Buffers
 
